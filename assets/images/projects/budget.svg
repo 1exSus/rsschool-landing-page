@@ -1,0 +1,13 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C8FF00"/>
+      <stop offset="1" stop-color="#FF2D95"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="#0b0b10"/>
+  <rect x="40" y="40" width="560" height="320" fill="none" stroke="url(#g)" stroke-width="4"/>
+  <circle cx="120" cy="110" r="48" fill="#C8FF00" opacity="0.85"/>
+  <rect x="360" y="220" width="180" height="80" fill="#FF2D95" opacity="0.9"/>
+  <text x="80" y="250" fill="#f5f5f5" font-family="Arial Black, sans-serif" font-size="56">CASH</text>
+</svg>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Максим Леус — Frontend-разработчик</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="index.html">LEUS<span>.dev</span></a>
+        <nav class="nav" id="site-nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#hero">Старт</a></li>
+            <li><a class="nav__link" href="#stack">Стек</a></li>
+            <li><a class="nav__link" href="#projects">Проекты</a></li>
+            <li><a class="nav__link" href="#about">О себе</a></li>
+            <li><a class="nav__link" href="catalog.html">Каталог</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Переключить тему">
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+          </button>
+          <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero__grid">
+          <div>
+            <p class="eyebrow">Frontend · React · TypeScript</p>
+            <h1>Максим Леус</h1>
+            <p class="hero__role muted">
+              Специализируюсь на разработке с использованием TypeScript, React и его экосистемы. Имею опыт в высоконагруженных системах,
+              переписывании legacy кода, и проектировании систем с 0 до первых пользователей. Убежден, что качественный продукт — это результат
+              слаженной работы команды, и всегда стремлюсь к ясной коммуникации с коллегами. Страстно интересуюсь информационными технологиями и тем,
+              как они трансформируют бизнес. Открыт для новых вызовов. Начал свой путь в IT с университета. Благодаря обучению по специальности попробовал
+              почти все, изучал схемотехнику, работу транзисторов и резисторов, обработку сигналов, программирование микроконтроллеров и Arduino. Активно
+              участвовал в акселераторах и конкурсах проектов.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="catalog.html">Смотреть проекты</a>
+              <a class="btn btn--ghost" href="https://t.me/ma1exSus" target="_blank" rel="noopener noreferrer">Написать</a>
+            </div>
+            <div class="hero__meta">
+              <span>Симферополь</span>
+              <span>24 года</span>
+              <span>English -1</span>
+            </div>
+          </div>
+          <div class="hero__photo-wrap">
+            <img
+              class="hero__photo"
+              src="assets/images/hero.jpg"
+              alt="Портрет Максима Леуса, заглушка для фото"
+              width="460"
+              height="575"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section" id="stack">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <p class="eyebrow">Monkey layer</p>
+              <h2>Стек</h2>
+            </div>
+            <p class="muted">И еще всякое разное.</p>
+          </div>
+          <div class="stack-grid">
+            <article class="stack-card"><img src="assets/icons/javascript.svg" alt="" width="36" height="36" /><h3>JavaScript</h3><span>ES6+</span></article>
+            <article class="stack-card"><img src="assets/icons/typescript.svg" alt="" width="36" height="36" /><h3>TypeScript</h3><span>Типы и контракты</span></article>
+            <article class="stack-card"><img src="assets/icons/react.svg" alt="" width="36" height="36" /><h3>React</h3><span>SPA и UI</span></article>
+            <article class="stack-card"><img src="assets/icons/redux.svg" alt="" width="36" height="36" /><h3>Redux</h3><span>Toolkit / RTK Query</span></article>
+            <article class="stack-card"><img src="assets/icons/html5.svg" alt="" width="36" height="36" /><h3>HTML5</h3><span>Семантика</span></article>
+            <article class="stack-card"><img src="assets/icons/css3.svg" alt="" width="36" height="36" /><h3>CSS3</h3><span>Адаптив</span></article>
+            <article class="stack-card"><img src="assets/icons/swagger.svg" alt="" width="36" height="36" /><h3>REST API</h3><span>Swagger / JSON</span></article>
+            <article class="stack-card"><img src="assets/icons/git.svg" alt="" width="36" height="36" /><h3>Git</h3><span>GitHub / GitLab</span></article>
+            <article class="stack-card"><img src="assets/icons/figma.svg" alt="" width="36" height="36" /><h3>Figma</h3><span>Макеты</span></article>
+            <article class="stack-card"><img src="assets/icons/webpack.svg" alt="" width="36" height="36" /><h3>Webpack</h3><span>Сборка</span></article>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <p class="eyebrow">Human layer</p>
+              <h2>О себе</h2>
+            </div>
+          </div>
+          <p class="about__lead muted">
+            Люблю вкусно покушать.
+          </p>
+          <div class="facts">
+            <article class="fact"><h3>Гребля</h3><p class="muted">Когда-то занимался этим шикарным видом спорта.</p></article>
+            <article class="fact"><h3>Кубик Рубика</h3><p class="muted">Собираю за минуту!.</p></article>
+            <article class="fact"><h3>LeetCode</h3><p class="muted">Иногда зависаю.</p></article>
+            <article class="fact"><h3>?????</h3><p class="muted">Преподавал Minecraft в IT школе wtf.</p></article>
+            <article class="fact"><h3>ИИ на кухне</h3><p class="muted">Активно использую ЭАЙ АИ СААС б2б в готовке завтраков.</p></article>
+            <article class="fact"><h3>English -1</h3><p class="muted">Уровень английского отрицательный, в резюме указываю B1.</p></article>
+          </div>
+          <div class="about__cta">
+            <a class="btn btn--primary" href="catalog.html">Перейти в каталог</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section__head">
+            <div>
+              <p class="eyebrow">Selected</p>
+              <h2>Пет-проекты</h2>
+            </div>
+            <a class="btn btn--ghost" href="catalog.html">Весь каталог</a>
+          </div>
+          <div class="carousel" data-carousel>
+            <div class="carousel__viewport">
+              <div class="carousel__track">
+                <article class="carousel__slide">
+                  <div class="carousel__media">
+                    <img src="assets/images/projects/kanban.svg" alt="Обложка проекта Kanban Flow" width="640" height="400" />
+                  </div>
+                  <div class="carousel__body">
+                    <p class="eyebrow">SPA</p>
+                    <h3>Kanban Flow</h3>
+                    <p class="muted">Доска задач с колонками, приоритетами и сохранением состояния.</p>
+                    <a class="btn btn--primary" href="catalog.html">Открыть в каталоге</a>
+                  </div>
+                </article>
+                <article class="carousel__slide">
+                  <div class="carousel__media">
+                    <img src="assets/images/projects/weather.svg" alt="Обложка проекта Sky Pulse" width="640" height="400" />
+                  </div>
+                  <div class="carousel__body">
+                    <p class="eyebrow">API</p>
+                    <h3>Sky Pulse</h3>
+                    <p class="muted">Погодный дашборд с прогнозом, поиском города и сменой единиц.</p>
+                    <a class="btn btn--primary" href="catalog.html">Открыть в каталоге</a>
+                  </div>
+                </article>
+                <article class="carousel__slide">
+                  <div class="carousel__media">
+                    <img src="assets/images/projects/pixels.svg" alt="Обложка проекта Pixel Lab" width="640" height="400" />
+                  </div>
+                  <div class="carousel__body">
+                    <p class="eyebrow">Canvas</p>
+                    <h3>Pixel Lab</h3>
+                    <p class="muted">Редактор пиксель-арта с палитрой, инструментами и экспортом.</p>
+                    <a class="btn btn--primary" href="catalog.html">Открыть в каталоге</a>
+                  </div>
+                </article>
+                <article class="carousel__slide">
+                  <div class="carousel__media">
+                    <img src="assets/images/projects/lms.svg" alt="Обложка проекта Learn Track" width="640" height="400" />
+                  </div>
+                  <div class="carousel__body">
+                    <p class="eyebrow">Education</p>
+                    <h3>Learn Track</h3>
+                    <p class="muted">Учебное SPA: модули, задания, прогресс и роли пользователей.</p>
+                    <a class="btn btn--primary" href="catalog.html">Открыть в каталоге</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="carousel__controls">
+              <div class="carousel__nav">
+                <button class="carousel__btn" type="button" data-carousel-prev aria-label="Предыдущий проект">←</button>
+                <button class="carousel__btn" type="button" data-carousel-next aria-label="Следующий проект">→</button>
+              </div>
+              <div class="carousel__dots" data-carousel-dots></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <h2 class="footer__title">Контакты</h2>
+            <div class="footer__contacts">
+              <span class="muted">Симферополь, Крым</span>
+            </div>
+          </div>
+          <div>
+            <h2 class="footer__title">Сети</h2>
+            <div class="footer__links">
+              <a href="https://t.me/ma1exSus" target="_blank" rel="noopener noreferrer">Telegram</a>
+              <a href="https://github.com/1exSus" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <div>
+            <h2 class="footer__title">Проект</h2>
+            <p class="muted">Авторский лендинг-портфолио.</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2026 Максим Леус</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
