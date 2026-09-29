@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог проектов — Максим Леус</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="index.html">LEUS<span>.dev</span></a>
+        <nav class="nav" id="site-nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html#hero">Старт</a></li>
+            <li><a class="nav__link" href="index.html#stack">Стек</a></li>
+            <li><a class="nav__link" href="index.html#projects">Проекты</a></li>
+            <li><a class="nav__link" href="index.html#about">О себе</a></li>
+            <li><a class="nav__link is-active" href="catalog.html">Каталог</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Переключить тему">
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+          </button>
+          <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="catalog-hero">
+        <div class="container">
+          <p class="eyebrow">Works</p>
+          <h1>Каталог проектов</h1>
+          <p class="muted">Карточки проектов собираются из JSON.</p>
+          <div class="tabs" data-tabs>
+            <button class="tabs__btn is-active" type="button" data-category="frontend">Frontend</button>
+            <button class="tabs__btn" type="button" data-category="learning">Учебные</button>
+            <button class="tabs__btn" type="button" data-category="utils">Утилиты</button>
+          </div>
+          <div class="cards" data-cards></div>
+          <div class="load-more">
+            <button class="btn btn--ghost" type="button" data-load-more hidden>Показать ещё</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <h2 class="footer__title">Контакты</h2>
+            <div class="footer__contacts">
+              <span class="muted">Симферополь, Крым</span>
+            </div>
+          </div>
+          <div>
+            <h2 class="footer__title">Сети</h2>
+            <div class="footer__links">
+              <a href="https://t.me/ma1exSus" target="_blank" rel="noopener noreferrer">Telegram</a>
+              <a href="https://github.com/1exSus" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <div>
+            <h2 class="footer__title">Проект</h2>
+            <p class="muted">Авторский лендинг-портфолио. Чистый HTML и CSS.</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2026 Максим Леус</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
