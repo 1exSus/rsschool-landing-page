@@ -59,6 +59,91 @@
         </div>
       </section>
     </main>
+    <div class="modal" data-modal>
+      <div class="modal__overlay" data-modal-overlay></div>
+
+      <div
+              class="modal__dialog"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-title"
+      >
+        <button
+                class="modal__close"
+                type="button"
+                data-modal-close
+                aria-label="Закрыть"
+        >
+          ✕
+        </button>
+
+        <div class="modal__media">
+          <img
+                  data-modal-image
+                  alt="Обложка выбранного проекта"
+                  width="640"
+                  height="400"
+          />
+        </div>
+
+        <div class="modal__content">
+          <p class="card__tag" data-modal-tag></p>
+
+          <h2 id="modal-title" data-modal-title></h2>
+
+          <p class="muted" data-modal-text></p>
+
+          <div class="params">
+            <div class="params__group">
+              <p class="params__label">Сложность</p>
+
+              <div class="params__row" data-param="difficulty">
+                <button class="chip" type="button" data-value="easy">
+                  Easy
+                </button>
+                <button class="chip" type="button" data-value="medium">
+                  Medium
+                </button>
+                <button class="chip" type="button" data-value="hard">
+                  Hard
+                </button>
+              </div>
+            </div>
+
+            <div class="params__group">
+              <p class="params__label">Срок</p>
+
+              <div class="params__row" data-param="duration">
+                <button class="chip" type="button" data-value="weekend">
+                  Weekend
+                </button>
+                <button class="chip" type="button" data-value="sprint">
+                  Sprint
+                </button>
+                <button class="chip" type="button" data-value="month">
+                  Month
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal__stats">
+            <strong data-modal-hours></strong>
+            <span class="muted" data-modal-inside></span>
+          </div>
+
+          <a
+                  class="btn btn--primary"
+                  data-modal-link
+                  href="https://github.com/1exSus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="container">
@@ -86,5 +171,8 @@
         </div>
       </div>
     </footer>
+    <script src="js/theme.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/catalog.js"></script>
   </body>
 </html>
