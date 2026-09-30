@@ -17,6 +17,10 @@
   let isDragging = false;
   let hasMoved = false;
 
+  let autoplayTimer = null;
+  let isHovered = false;
+  let autoplayDelay = 5000;
+
   slides.forEach(function (_, i) {
     let dot = document.createElement("button");
 
@@ -57,6 +61,33 @@
 
     setPosition(0, true);
     updateDots();
+
+    restartAutoplay();
+  }
+
+  function startAutoplay() {
+    if (isHovered) return;
+
+    stopAutoplay();
+
+    autoplayTimer = setInterval(function () {
+      goTo(index + 1);
+    }, autoplayDelay);
+  }
+
+  function stopAutoplay() {
+    if (autoplayTimer !== null) {
+      clearInterval(autoplayTimer);
+      autoplayTimer = null;
+    }
+  }
+
+  function restartAutoplay() {
+    stopAutoplay();
+
+    if (!isHovered) {
+      startAutoplay();
+    }
   }
 
   prev.addEventListener("click", function () {
@@ -80,6 +111,8 @@
     hasMoved = false;
     startX = event.clientX;
     currentX = event.clientX;
+
+    stopAutoplay();
 
     track.style.transition = "none";
 
@@ -128,6 +161,30 @@
       finishDrag();
     }
   });
+
+  root.addEventListener("mouseenter", function () {
+    isHovered = true;
+    stopAutoplay();
+  });
+
+  root.addEventListener("mouseleave", function () {
+    isHovered = false;
+    startAutoplay();
+  });
+
+  root.addEventListener("wheel", function (event) {
+    if (Math.abs(event.deltaY) < 10 && Math.abs(event.deltaX) < 10) {
+      return;
+    }
+
+    event.preventDefault();
+
+    if (event.deltaY > 0 || event.deltaX > 0) {
+      goTo(index + 1);
+    } else {
+      goTo(index - 1);
+    }
+  }, { passive: false });
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowLeft") {
