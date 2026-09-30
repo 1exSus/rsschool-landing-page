@@ -99,7 +99,7 @@
   });
 
   root.addEventListener("pointerdown", function (event) {
-    if (event.target.closest(".carousel__btn")) {
+    if (event.target.closest("a, button")) {
       return;
     }
 
