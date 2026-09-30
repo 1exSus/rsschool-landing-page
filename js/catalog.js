@@ -53,7 +53,7 @@
     });
 
     let hasMore = visibleCount < items.length;
-    loadMore.hidden = !hasMore;
+    loadMore.style.display = hasMore ? "flex" : "none";
   }
 
   function setCategory(next) {
