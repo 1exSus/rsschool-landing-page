@@ -1,0 +1,296 @@
+[
+  {
+    "id": "kanban",
+    "name": "Kanban Flow",
+    "category": "frontend",
+    "short": "Доска задач с колонками, drag-and-drop и фильтрами.",
+    "description": "SPA для управления задачами: колонки, приоритеты, поиск и сохранение состояния в браузере.",
+    "image": "assets/images/projects/kanban.svg",
+    "tag": "SPA",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "medium", "duration": "sprint" },
+    "difficulty": {
+      "easy": { "hours": 12, "inside": "Статичные колонки и карточки без перетаскивания." },
+      "medium": { "hours": 28, "inside": "Drag-and-drop, фильтры и localStorage." },
+      "hard": { "hours": 48, "inside": "Роли, аналитика колонок и горячие клавиши." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Минимальный прототип за выходные." },
+      "sprint": { "hoursAdd": 10, "inside": "Рабочий MVP за спринт." },
+      "month": { "hoursAdd": 22, "inside": "Полировка UX и покрытие сценариев." }
+    }
+  },
+  {
+    "id": "weather",
+    "name": "Sky Pulse",
+    "category": "frontend",
+    "short": "Погодный дашборд с прогнозом и поиском города.",
+    "description": "Интерфейс погоды: текущие условия, почасовой прогноз и смена единиц измерения.",
+    "image": "assets/images/projects/weather.svg",
+    "tag": "API",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "easy", "duration": "weekend" },
+    "difficulty": {
+      "easy": { "hours": 8, "inside": "Один город и текущая погода." },
+      "medium": { "hours": 18, "inside": "Прогноз на 5 дней и геолокация." },
+      "hard": { "hours": 32, "inside": "Сравнение городов и графики." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Быстрый клиент к открытому API." },
+      "sprint": { "hoursAdd": 8, "inside": "Карточки, скелетоны и обработка ошибок." },
+      "month": { "hoursAdd": 16, "inside": "Темы, избранное и офлайн-кэш." }
+    }
+  },
+  {
+    "id": "movies",
+    "name": "Frame Hunt",
+    "category": "frontend",
+    "short": "Поиск фильмов с карточками, рейтингом и избранным.",
+    "description": "Каталог кино: поиск, пагинация, избранное и страница деталей.",
+    "image": "assets/images/projects/movies.svg",
+    "tag": "Catalog",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "medium", "duration": "sprint" },
+    "difficulty": {
+      "easy": { "hours": 10, "inside": "Список фильмов с поиском." },
+      "medium": { "hours": 24, "inside": "Детали, избранное и пагинация." },
+      "hard": { "hours": 40, "inside": "Рекомендации и сложные фильтры." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Сетка постеров и запрос к API." },
+      "sprint": { "hoursAdd": 12, "inside": "Маршруты и состояние избранного." },
+      "month": { "hoursAdd": 24, "inside": "Профили, коллекции и адаптив." }
+    }
+  },
+  {
+    "id": "budget",
+    "name": "Cash Ledger",
+    "category": "frontend",
+    "short": "Трекер расходов с категориями и сводкой за месяц.",
+    "description": "Учёт трат: категории, диаграммы и экспорт данных.",
+    "image": "assets/images/projects/budget.svg",
+    "tag": "Finance",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "medium", "duration": "month" },
+    "difficulty": {
+      "easy": { "hours": 10, "inside": "Список операций и сумма." },
+      "medium": { "hours": 26, "inside": "Категории, фильтры и график." },
+      "hard": { "hours": 44, "inside": "Бюджеты, цели и CSV-экспорт." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Форма добавления и таблица." },
+      "sprint": { "hoursAdd": 10, "inside": "Сводка и валидация." },
+      "month": { "hoursAdd": 20, "inside": "Аналитика и визуализация." }
+    }
+  },
+  {
+    "id": "quiz",
+    "name": "Quiz Pulse",
+    "category": "frontend",
+    "short": "Викторина с таймером, уровнями и экраном результата.",
+    "description": "Игровой квиз: вопросы из JSON, прогресс и подсчёт очков.",
+    "image": "assets/images/projects/quiz.svg",
+    "tag": "Game",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "easy", "duration": "weekend" },
+    "difficulty": {
+      "easy": { "hours": 8, "inside": "Линейный набор вопросов." },
+      "medium": { "hours": 16, "inside": "Таймер и несколько тем." },
+      "hard": { "hours": 28, "inside": "Рейтинг, жизни и анимации." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Играбельный прототип." },
+      "sprint": { "hoursAdd": 6, "inside": "Темы вопросов и статистика." },
+      "month": { "hoursAdd": 14, "inside": "Редактор вопросов и шаринг." }
+    }
+  },
+  {
+    "id": "pixels",
+    "name": "Pixel Lab",
+    "category": "frontend",
+    "short": "Редактор пиксель-арта с палитрой и экспортом PNG.",
+    "description": "Холст на CSS Grid/Canvas: кисть, ластик, палитра и сохранение.",
+    "image": "assets/images/projects/pixels.svg",
+    "tag": "Canvas",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "hard", "duration": "sprint" },
+    "difficulty": {
+      "easy": { "hours": 14, "inside": "Сетка и заливка ячеек." },
+      "medium": { "hours": 30, "inside": "Инструменты и палитра." },
+      "hard": { "hours": 52, "inside": "Слои, undo и экспорт." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Мини-холст 16×16." },
+      "sprint": { "hoursAdd": 12, "inside": "Полноценный редактор." },
+      "month": { "hoursAdd": 24, "inside": "Галерея и шаблоны." }
+    }
+  },
+  {
+    "id": "chatui",
+    "name": "Signal Desk",
+    "category": "frontend",
+    "short": "Интерфейс мессенджера: чаты, статусы и тёмная тема.",
+    "description": "UI-кит переписки с макетом списка диалогов и окна сообщений.",
+    "image": "assets/images/projects/chat.svg",
+    "tag": "UI",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "medium", "duration": "sprint" },
+    "difficulty": {
+      "easy": { "hours": 10, "inside": "Статичный макет чата." },
+      "medium": { "hours": 22, "inside": "Переключение диалогов и темы." },
+      "hard": { "hours": 38, "inside": "Поиск, вложения и typing-индикатор." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Один экран переписки." },
+      "sprint": { "hoursAdd": 8, "inside": "Список чатов и адаптив." },
+      "month": { "hoursAdd": 18, "inside": "Компонентная система." }
+    }
+  },
+  {
+    "id": "landing",
+    "name": "This Portfolio",
+    "category": "frontend",
+    "short": "Этот лендинг: адаптив, темы и каталог на чистом JS.",
+    "description": "Двухстраничное портфолио без фреймворков: семантика, карусель и модалки.",
+    "image": "assets/images/projects/landing.svg",
+    "tag": "Landing",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "medium", "duration": "sprint" },
+    "difficulty": {
+      "easy": { "hours": 16, "inside": "Одна страница и базовая сетка." },
+      "medium": { "hours": 32, "inside": "Две страницы, темы и слайдер." },
+      "hard": { "hours": 50, "inside": "Каталог, модалка и полный адаптив." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Каркас секций." },
+      "sprint": { "hoursAdd": 12, "inside": "Соответствие чек-листу." },
+      "month": { "hoursAdd": 20, "inside": "Полировка визуала и a11y." }
+    }
+  },
+  {
+    "id": "lms",
+    "name": "Learn Track",
+    "category": "learning",
+    "short": "Учебное SPA: модули, задания и прогресс студента.",
+    "description": "Интерфейс обучения с темами, тестами и ролями студента и администратора.",
+    "image": "assets/images/projects/lms.svg",
+    "tag": "Education",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "hard", "duration": "month" },
+    "difficulty": {
+      "easy": { "hours": 20, "inside": "Список модулей без ролей." },
+      "medium": { "hours": 40, "inside": "Прогресс и формы заданий." },
+      "hard": { "hours": 70, "inside": "Роли, защита маршрутов и админка." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Каркас кабинета." },
+      "sprint": { "hoursAdd": 16, "inside": "Основные сценарии студента." },
+      "month": { "hoursAdd": 32, "inside": "Полный учебный цикл." }
+    }
+  },
+  {
+    "id": "algo",
+    "name": "Sort Stage",
+    "category": "learning",
+    "short": "Визуализация сортировок с шагами и скоростью.",
+    "description": "Анимация алгоритмов: выбор метода, пауза и подсветка сравнений.",
+    "image": "assets/images/projects/algo.svg",
+    "tag": "Algorithms",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "medium", "duration": "sprint" },
+    "difficulty": {
+      "easy": { "hours": 10, "inside": "Один алгоритм и бар-чарт." },
+      "medium": { "hours": 22, "inside": "Несколько сортировок и скорость." },
+      "hard": { "hours": 36, "inside": "Шаги, подсказки и сравнение." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Демо bubble sort." },
+      "sprint": { "hoursAdd": 8, "inside": "Набор алгоритмов." },
+      "month": { "hoursAdd": 16, "inside": "Учебные подсказки." }
+    }
+  },
+  {
+    "id": "rs-task",
+    "name": "RS Lab Notes",
+    "category": "learning",
+    "short": "Конспект заданий курса: чек-листы и заметки.",
+    "description": "Страница с прогрессом по учебным задачам и ссылками на материалы.",
+    "image": "assets/images/projects/notes.svg",
+    "tag": "Study",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "easy", "duration": "weekend" },
+    "difficulty": {
+      "easy": { "hours": 6, "inside": "Статический список задач." },
+      "medium": { "hours": 14, "inside": "Фильтры статуса и поиск." },
+      "hard": { "hours": 24, "inside": "Заметки и экспорт прогресса." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Карточки заданий." },
+      "sprint": { "hoursAdd": 6, "inside": "Интерактивный трекер." },
+      "month": { "hoursAdd": 12, "inside": "Шаблоны и теги." }
+    }
+  },
+  {
+    "id": "rubik",
+    "name": "Cube Timer",
+    "category": "utils",
+    "short": "Таймер сборки кубика с историей и средним.",
+    "description": "Секундомер, список сборок и расчёт среднего из пяти.",
+    "image": "assets/images/projects/rubik.svg",
+    "tag": "Timer",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "easy", "duration": "weekend" },
+    "difficulty": {
+      "easy": { "hours": 6, "inside": "Старт/стоп и список времён." },
+      "medium": { "hours": 14, "inside": "Ao5, scramble и удаление." },
+      "hard": { "hours": 24, "inside": "График прогресса и сессии." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Рабочий таймер." },
+      "sprint": { "hoursAdd": 6, "inside": "Статистика и история." },
+      "month": { "hoursAdd": 12, "inside": "Экспорт и темы." }
+    }
+  },
+  {
+    "id": "json",
+    "name": "JSON Lens",
+    "category": "utils",
+    "short": "Форматтер JSON с подсветкой и сворачиванием узлов.",
+    "description": "Утилита: pretty-print, валидация и копирование результата.",
+    "image": "assets/images/projects/json.svg",
+    "tag": "Tool",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "medium", "duration": "weekend" },
+    "difficulty": {
+      "easy": { "hours": 6, "inside": "Форматирование и ошибки парсера." },
+      "medium": { "hours": 16, "inside": "Дерево и сворачивание." },
+      "hard": { "hours": 28, "inside": "Diff двух JSON и поиск путей." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Минимальный форматтер." },
+      "sprint": { "hoursAdd": 8, "inside": "Дерево и копирование." },
+      "month": { "hoursAdd": 16, "inside": "Расширенные инспекторы." }
+    }
+  },
+  {
+    "id": "pomodoro",
+    "name": "Focus Rings",
+    "category": "utils",
+    "short": "Помодоро-таймер с циклами работы и отдыха.",
+    "description": "Кольцевой таймер, звук завершения и счётчик сессий.",
+    "image": "assets/images/projects/pomodoro.svg",
+    "tag": "Focus",
+    "link": "https://github.com/1exSus",
+    "defaults": { "difficulty": "easy", "duration": "weekend" },
+    "difficulty": {
+      "easy": { "hours": 5, "inside": "Один интервал работы." },
+      "medium": { "hours": 12, "inside": "Циклы и настройки длин." },
+      "hard": { "hours": 22, "inside": "Статистика дня и уведомления." }
+    },
+    "duration": {
+      "weekend": { "hoursAdd": 0, "inside": "Базовый помодоро." },
+      "sprint": { "hoursAdd": 5, "inside": "Настройки и звук." },
+      "month": { "hoursAdd": 10, "inside": "История фокуса." }
+    }
+  }
+]
